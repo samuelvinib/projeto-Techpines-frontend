@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Projeto Frontend - Top 5 Músicas Tião Carreiro & Pardinho
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+Este é o frontend da aplicação que exibe a lista das 5 músicas mais tocadas de Tião Carreiro & Pardinho, permitindo que usuários autenticados sugiram novas músicas via link do YouTube. O projeto também permite que administradores gerenciem as sugestões e a lista de músicas.
 
-In the project directory, you can run:
+## Tecnologias utilizadas
 
-### `npm start`
+- **Frontend**: ReactJS
+- **Autenticação**: JWT via API Laravel
+- **Containerização**: Docker
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instalação do projeto
 
-### `npm test`
+> **Requisitos:** Docker instalado na máquina.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Passo 1 - Clonar o repositório
 
-### `npm run build`
+```bash
+  git clone git@github.com:samuelvinib/projeto-Techpines-frontend.git
+  cd projeto-Techpines-frontend
+``` 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Passo 2 - Configurar e iniciar os containers
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  docker-compose up -d --build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Funcionalidades
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Exibe o ranking das 5 músicas mais populares.
+- Exibe todas as músicas, com paginação.
+- Usuários autenticados podem sugerir novas músicas via link do YouTube.
+- Administradores podem aprovar/reprovar sugestões e gerenciar a lista de músicas.
+- Sistema de autenticação e autorização integrado ao backend Laravel.
+- Comunicação via API REST.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Acesso à aplicação
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Após a instalação e execução dos containers, a aplicação estará disponível em:
 
-## Learn More
+```bash
+  http://localhost:3000
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Boa sorte e bom desenvolvimento! 😄
 
-To learn React, check out the [React documentation](https://reactjs.org/).
