@@ -1,7 +1,8 @@
 export interface Music {
     id?: number;
-    title: string;
+    title?: string;
     url: string;
-    status?: boolean;
-    views:number;
+    views?: number;
+    status?: string;
+    cover?: string;
 }
