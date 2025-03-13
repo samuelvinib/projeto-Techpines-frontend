@@ -49,6 +49,3 @@ Após a instalação e execução dos containers, a aplicação estará disponí
 ```bash
   http://localhost:3000
 ```
-
-Boa sorte e bom desenvolvimento! 😄
-
